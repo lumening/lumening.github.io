@@ -1,129 +1,217 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
-  
-  <title>lumen fun</title>
-
-  
-  <meta name="author" content="lumen">
-  
-
-  
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   <meta name="description" content="linux php nginx mysql">
+  <meta name="keyword" content="hexo-theme, vuejs">
+  
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      lumen fun
+    
+  </title>
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  
+    css('css/plugins/gitment.css')
+  
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <
+    <script src="/js/qrious.js"></script>
+  
+  
+    <script src="/js/gitment.js"></script>
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
   
 
-  
 
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  
-
-  <meta property="og:site_name" content="lumen fun">
-
-  
-  <meta property="og:image" content="/favicon.ico">
-  
-
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="lumen fun" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 </head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png">
+</div>
 
-
-<body>
-<div class="blog">
-  <div class="content">
-
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">lumen fun</a>
-    </h1>
-    <p class="site-description"></p>
-  </div>
-  <nav class="site-navigation">
-    <ul>
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>lumen fun</span>
+    </a>
+    <ul class="right-list">
       
-        <li><a href="/">Home</a></li>
+        <li class="list-item">
+          
+            <a href="/" class="item-link active">Home</a>
+          
+        </li>
       
-        <li><a href="/archives">Archives</a></li>
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">About</a>
+          
+        </li>
       
     </ul>
-  </nav>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link mobile-active">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 </header>
 
-    <main class="site-main posts-loop">
-    
-  <article>
-
+    <main class="app-body">
   
-    
-    <h3 class="article-title"><a href="/2019/02/20/MYSQL学习大纲/"><span>MYSQL学习大纲</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2019/02/20/MYSQL学习大纲/" rel="bookmark">
-        <time class="entry-date published" datetime="2019-02-20T06:52:17.000Z">
-          2019-02-20
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/2019/02/20/MYSQL学习大纲/">MYSQL学习大纲</a>
+      </h2>
+      <p class="article-date">February 20, 2019</p>
       
-        <h3 id="第一周"><a href="#第一周" class="headerlink" title="第一周"></a>第一周</h3><p>1.1 安装与启动<br>1.2 配置<br>1.3 术语<br>1.4 库的操作、表的操作、表数据的增删查改<br>1.5 数据类型<br>1.5.1 整数类型<br>1.5.2 实数类型（不是整数的数值，也叫浮点数）<br>1.5.3 字符串类型<br>1.5.4 日期和时间类型<br>1.5.5 位数据类型<br>1.5.6 二进制类型<br>1.6 选择标识符（identifier）<br>1.7 特殊类型数据</p>
-<h3 id="第二-三周"><a href="#第二-三周" class="headerlink" title="第二+三周"></a>第二+三周</h3><p>2.1 存储引擎<br>2.1.1 MySQL存储引擎简介<br>2.1.2 InnoDB存储引擎<br>2.1.3 MyISAM存储引擎<br>2.1.4 MEMORY存储引擎<br>2.2 日志<br>2.2.1 错误日志<br>2.2.2 满日志<br>2.2.3 查询日志<br>2.2.4 二进制日志<br>2.3 用户管理<br>2.4 权限管理<br>2.5 索引（B+树）<br>2.6 数据的备份与还原<br>2.7 字符集<br>2.8 锁<br>2.9 事务<br>2.10 存储过程<br>2.11 视图<br>2.12 触发器<br>2.13 内置函数<br>2.14 分区<br>2.15 分表</p>
-<h3 id="第四周"><a href="#第四周" class="headerlink" title="第四周"></a>第四周</h3><p>3.1 主从<br>3.2 php与mysql<br>3.3 mysql工具<br>3.4 phpmyadmin<br>3.5 navicat<br>3.6 性能优化<br>3.7 机器选择<br>3.8 语句优化（explain）<br>3.9 show processlist<br>3.10 索引<br>3.11 选择合适的数据类型<br>3.12 查询必要的数据<br>3.13 其他的问题，比如<br>3.14 忘记密码怎么办？<br>3.15 数据库服务器cpu超过100%怎么办</p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-
-<nav class="pagination">
+      <div class="article-summary">
+        
+          第一周1.1 安装与启动1.2 配置1.3 术语1.4 库的操作、表的操作、表数据的增删查改1.5 数据类型1.5.1 整数类型1.5.2 实数类型（不是整数的数值，也叫浮点数）1.5.3 字符串类型1.5.4 日期和时间类型1.5.5 位数据类型1.5.6 二进制类型1.6 选择标识符（i ...
+        
+      </div>
+      <a class="more" href="/2019/02/20/MYSQL学习大纲/">Read more</a>
+    </article>
   
-  
-</nav>
-    </main>
 
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+  
+</main>
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2019 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
     <br>
-    
-    &copy; 2019 lumen
-    
+    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
   </p>
 </footer>
-    
-  </div>
-</div>
-</body>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/js/script.js"></script>
+  </body>
 </html>
